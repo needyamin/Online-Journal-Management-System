@@ -1,0 +1,597 @@
+body{background: #ddd;font-family: Arial, Helvetica, sans-serif;}
+
+/* //////////////////////////////////////////////////////////////////////////
+Top nav menu style ////////////////////////////////////////////////////////////////////////// */
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  max-width:80%;
+  height: 35px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-weight: bold;  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 9px 12px;
+  text-decoration: none;
+  font-size: 12px;    
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+#slidershow-container-background{background-color:white; max-width: 80%; margin:  0 auto; }
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  max-width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+    
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+    
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////
+ slider end 
+//////////////////////////////////////////////////////////////////////////*/
+
+
+.header{
+    max-width:80%; 
+    max-height: 20%; 
+    background: white; 
+    text-align: center; 
+    margin: 0 auto;
+     }
+
+
+#header_logo{
+    float: left; 
+    width: 135px;
+    height: 82px;
+    margin-left: 10px;
+    padding: 8px 10px;
+      }
+
+.menu{
+    max-width:80%; 
+    height: 35px; 
+    margin: 0 auto;
+    padding: 5px;
+    }
+
+.menu2{
+    background: #333333; 
+    color: white; 
+    text-align: center; 
+    padding: 6px 10px;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+}
+
+
+/*This is background horizontal style image style*/
+#istyle{
+    background-image: url('assets/img/line.png');
+    max-width:80%;
+    margin: 0 auto;
+    height: 4px;
+    }
+
+#img_cover{
+    float:left; 
+    padding: 2%; 
+    width:200px; 
+    height: 250px;}
+
+#license{
+    text-align: right; 
+    color:#b5ffcf; 
+    padding: 9px 12px;
+    font-size: 13px;
+    }
+
+
+/*Container body*/
+.container{
+    margin:0 auto; 
+    max-width:80%; 
+    background-color:white; 
+    overflow: auto; 
+    opacity: 1;
+    transition: opacity 1s;
+     }
+
+.container-loaded {
+    opacity: 1;}
+
+.col-sidebar{
+    float: left;
+    width: 30%;
+    border:2px solid #e1e1e1;
+    font-size: 13px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 5px; 
+     }
+
+
+/* Main Body Design */
+.col-main {
+    float:left; 
+    width:69%; 
+    text-align: center; 
+    font-size: 16px;
+    text-align: justify;
+    border-radius: 8px;
+    }
+
+
+/* Card Box Design */
+.col-card{
+    border:2px solid #e1e1e1; 
+    overflow: auto;  
+    border-radius: 4px; 
+    margin-top: 5px; 
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+
+#post{text-align: left; text-align: justify; padding: 1%; height: auto;
+  font-size: 16px;
+    display: block;
+text-decoration: none;
+}
+
+#post_title{margin-top: 2%;color:#EE3322;font-size: 18px;font-weight: bold;-webkit-margin-before:4%;}
+
+#issue{border:1px solid #50b9a0; padding:5px;  border-radius: 5px; }
+
+#rating{margin-left: 6px; padding: 5px;}
+
+
+/*start page pagination style*/
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+
+/* ///////////////////////////////////////////// 
+  footer start 
+///////////////////////////////////////////// */
+.footer{
+    max-width:80%; 
+    height: 30%; 
+    background: black;
+    color:aliceblue; 
+    margin: 0 auto;
+    }
+
+#footer_left{
+    float: left;
+    margin-left: 10px;
+    margin-top: 60px;
+    font-size: 14px;
+    width: 200px;
+}
+
+
+#footer_right{
+    float:right; 
+    margin-right: 10px;
+    margin-top: 50px;
+
+}
+
+#footer_end{
+    float: center;
+    font-size: 14px;
+    text-align: center;
+    background-color: #185990;
+    color: #f7f7f7;
+    padding: 10px 15px;
+    max-width:100%; 
+    height: 2%; 
+}
+
+
+/* ///////////////////////////////////////////// 
+  footer end
+///////////////////////////////////////////// */
+
+
+
+
+
+
+/* start dropdown menu code */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+    height: 30px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 14px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*Scroll Top CSS*/
+#scroll_top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scroll_top:hover {
+  background-color: #555;
+}
+
+
+
+/* Style the input container */
+.navbar .search-container {
+  float: right;
+}
+
+/* Style the input field inside the navbar */
+.navbar input[type=text] {
+ padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+}
+
+/* Style the button inside the input container */
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 5px;
+  background: #ddd;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+
+
+/* Separator */
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+
+/* separator end*/
+
+
+/* separator -text*/
+
+.sep{
+  width: 100%;
+  display: flex;
+  color: #333;
+  align-items: center;
+  flex: 1;
+}
+
+.sep:before{
+  content: '';
+  height: 1px;
+  background: #333;
+  max-width: 100px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.sep:after{
+  content: '';
+  height: 1px;
+  background: #333;
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* separator -tex end*/
+
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+
+
+
+.pdf {
+    display: inline-block;
+    padding: 0 1em;
+    background: #fff;
+    border: 1px solid #007ab2;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 28px;
+    color: #007ab2;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- MOBILE RESPONSIVE-------------------*/
+
+
+/*Device = Desktops*/
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+
+/*Device = Laptops, Desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+}
+
+
+/*Screen = B/w 768px to 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+[class*="col-"] { width: 98.9%;}
+.container,.header,.footer,.menu,.menu2,.slideshow-container,ul,#istyle,#slidershow-container-background{max-width:98.9%;}      
+  
+}
+
+
+/*Screen = B/w 768px to 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+[class*="col-"] { width: 98.9%;}
+.container,.header,.footer,.menu,.menu2,.slideshow-container,ul,#istyle,#slidershow-container-background{max-width:98s.9%;}    
+}
+
+
+/*Screen = B/w 481px to 767px*/
+@media (min-width: 481px) and (max-width: 767px) {
+  
+[class*="col-"] { width: 98.9%;}
+.container,.header,.footer,.menu,.menu2,.slideshow-container,ul,#istyle,#slidershow-container-background{max-width:98.9%;}
+   
+#img_cover{width:68%;margin-left:12%; margin-right: 12%; }    
+ 
+    
+}
+
+
+/*Screen = B/w 320px to 479px*/
+@media (min-width: 320px) and (max-width: 480px) { 
+[class*="col-"] { width: 98.9%;}
+.container,.header,.footer,.menu,.menu2,.slideshow-container,ul,#istyle,#slidershow-container-background,#rating{max-width:98.9%;}
+#break{clear:both;}
+
+#img_cover{width:68%;margin-left: 12%; margin-right: 12%;} 
+.col-card{width:98%;}
+ 
+}
+
+
+
+/* Start Mobile and Desktop Hide and Show Functions */
+.desktop-only
+{display: block;}
+
+
+.mobile-only
+{display: none;}
+
+@media screen and (max-width: 645px)
+{.desktop-only
+{display: none;} 
+
+.mobile-only
+{display: block;}}
+
+/* End Mobile and Desktop Hide and Show Functions */

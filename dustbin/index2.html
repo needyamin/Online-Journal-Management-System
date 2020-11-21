@@ -1,0 +1,371 @@
+<?php require"function/database.php"; ?> 
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    
+   <!--<script>alert('We are working on our site. Please visit us next month 1 July 2020')</script>-->
+    
+<!-- Keywords Made by Yamin -->
+  <meta name="description" content="Open Source Journal">
+  <meta name="keywords" content="bio-science, journal, Bangladesh">
+  <meta name="author" content="Md Hassan Shamim">
+<!-- SEO Meta Tag end -->
+
+    
+    
+    <title>Welcome to Opaar </title>
+    <link href="style.css" rel="stylesheet" type="text/css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+      $(document).ready(function() {
+        $('.container').addClass('container-loaded');
+      });
+    </script>
+      
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Sitemap</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+    
+<div class="desktop-only">
+<div id="license">ISSN xxxx-xxxx (Online), ISSN xxxx-xxxx (Print)</div>
+</div>
+    
+</ul>
+    
+    
+
+<div class="header">
+    <table id="header_table_logo" width="80%"> 
+        <tr><td> <img src="assets/img/logo.png" id="header_logo" > </td> 
+        <td></td>
+        </tr></table>
+    
+    
+    </div>
+    
+<div class="menu"> 
+    
+    
+<div class="desktop-only">
+<div class="navbar">
+  <a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+    
+ <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+    
+
+</div>
+</div>
+    
+<!-- start mobile navbar-->  
+<div class="mobile-only">
+    <div class="navbar">
+  <a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+   
+    <div id="mobile_nav_links" class="mobile_nav">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+        
+    </div> 
+    
+    
+    </div>
+  <!-- end mobile navbar-->  
+    
+    
+ </div>
+    
+    
+<div id="istyle" style="margin-bottom: 3px;"> </div>
+
+
+<!--start slidershow-->    
+<div class="">  
+<div id="slidershow-container-background">   
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="assets/img/slider1.jpg" style="width:100%; height: 40%;">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="assets/img/slider2.jpg" style="width:100%; height: 40%;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="assets/img/slider3.jpg" style="width:100%; height: 40%;">
+  <div class="text">Caption Three</div>
+</div>
+    
+    
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="assets/img/slider4.jpg" style="width:100%; height: 40%;">
+  <div class="text">Caption Three</div>
+</div>
+    
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>     
+</div>
+</div> 
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+<!--end slidershow-->    
+    
+    
+</head>
+    
+    
+    
+<div style="clear:both"></div>
+    
+
+<body>
+      
+    
+
+
+<!--start go top scroll-->   
+<div class="desktop-only">   
+<button onclick="topFunction()" id="scroll_top" title="Go to top">Top</button></div>        
+
+<script>
+//Get the button
+var mybutton = document.getElementById("scroll_top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>   
+<!--end go top scroll-->     
+    
+<!--start main body container-->      
+<div class="container">
+        
+     
+<!--start col body post code-->        
+<div class="col-main">
+    
+    
+<!--start main body post code-->         
+<div class="col-card">
+<div id="post"> 
+
+<img src="assets/img/cover.jpg" id="img_cover"> <div id="break"> </div>    
+
+<div id="post_title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>    
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p> 
+    
+<table><tr><td>
+<div id="issue">view journal</div> </td> <td>    
+<div id="issue">current issue</div></td></tr></table>     
+           
+<div id="rating">          
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> </div>         
+
+</div></div>
+<div style="clear:both"></div> 
+<!--stop main body post code-->       
+        
+    
+<!--start main body post code-->         
+<div class="col-card">
+<div id="post"> 
+
+<img src="assets/img/cover.jpg" id="img_cover"> <div id="break"> </div>    
+
+<div id="post_title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>    
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p> 
+    
+<table><tr><td>
+<div id="issue">view journal</div> </td> <td>    
+<div id="issue">current issue</div></td></tr></table>     
+           
+<div id="rating">          
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> </div>         
+
+</div></div>
+<div style="clear:both"></div> 
+<!--stop main body post code-->  
+    
+<!--start main body post code-->         
+<div class="col-card">
+<div id="post"> 
+
+<img src="assets/img/cover.jpg" id="img_cover"> <div id="break"> </div>    
+
+<div id="post_title"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>    
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p> 
+    
+<table><tr><td>
+<div id="issue">view journal</div> </td> <td>    
+<div id="issue">current issue</div></td></tr></table>     
+           
+<div id="rating">          
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span> </div>         
+
+</div></div>
+    
+  <!--start pagination-->   
+<div   style="text-align: center; padding: 10px; ">
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div> </div>
+<!--end pagination-->      
+    
+<div style="clear:both"></div> 
+<!--stop main body post code-->      
+       
+    
+</div>
+<!--end col body post code-->        
+        
+        
+        
+<!--start right sidebar code-->        
+<div class="col-sidebar">
+    
+<h3>Sidebar </h3><hr style="border: 5px solid green;">
+<table border="1px" align="center" width="50%"> <th> Login Forum</th> 
+<tr><td width="100%" ><input type="email" name="email" placeholder="enter email" ></td></tr>
+<tr><td width="100%"><input type="password" name="password" placeholder="enter password"></td></tr><tr><td align="center"><input type="submit" value="Login"></td></tr></table>
+    
+ </div>
+<!--end right sidebar code-->          
+    
+    
+          </div>
+<!--start main body container-->      
+
+    
+   
+    
+    
+    
+
+</body>
+<div style="clear:both"></div> 
+    
+<div id="istyle" style="margin-top: 3px;"> </div>
+    
+    
+<!--start footer-->       
+<div class="footer"> 
+<div id="footer_left"> ISSN xxxx-xxxx (Online), ISSN xxxx-xxxx (Print) </div> 
+    <div id="footer_right">     <img src="assets/img/logo.png" style="width: 100px;"> 
+      </div>
+         </div>  
+<!--end footer-->       
+    
+
+<div id="footer_end">© 2020 Opaar.Com |  All rights reserved.</div>
+
+</html>
+

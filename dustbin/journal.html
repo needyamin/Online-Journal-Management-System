@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+    
+    
+<title>Opaar Control</title>
+
+
+<!--Code CMS CSS start-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>  
+    
+<!--Start-->
+<script src="admin/assets/js/bootstrap.min.js"></script>
+<script src="admin/assets/js/chosen.js"></script>
+<script src="admin/assets/js/bootstrap.bundle.min.js"></script>
+<link href="admin/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="admin/assets/css/chosen.css">
+<link rel="stylesheet" href="admin/assets/css/bootstrap-tagsinput.css">
+<!--End Boostrap-->
+    
+  <!--start CMS CSS end-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+
+    <!--fontawesome-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="admin/assets/summernote/summernote-bs4.min.js"></script>
+   <!--end CMS CSS end-->
+
+  
+   <!-- This is what you need -->
+    <script src='admin/assets/sweetalert/sweetalert.js'></script>
+    <link rel='stylesheet' href='admin/assets/sweetalert/sweetalert.css'>
+        <link href='sweetalert/docs.css' rel='stylesheet'>
+   <!--.......................-->
+    
+
+</head>
+
+
+    
+<style> 
+   #istyle {
+    background-image: url('assets/img/line.png');
+    max-width: 100%;
+    margin: 0 auto;
+        margin-bottom: 0px;
+    height: 4px;
+}</style>    
+    
+<body style="background: #ddd; font-size: 15px;">
+<div class="container-fluid">
+    
+ <!--nav-top start-->
+<nav class="navbar-sm navbar-expand bg-dark navbar-dark">
+    
+ <div class="container">      
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+    <img src="http://localhost/needyamin/assets/img/logo.png" alt="" style="max-width:68px;">
+    </li>
+      
+       <li class="nav-item active"> ---- </li>
+      
+     <li class="nav-item active">    
+      <a class="nav-link" href="#">Home</a>
+    </li>
+      
+    <li class="nav-item">
+      <a class="nav-link" href="#">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Registration</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Journals</a>
+    </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 15px;">
+          <a class="dropdown-item" href="#">click</a>
+          <a class="dropdown-item" href="#">click</a>
+        </div>
+      </li>
+      
+     </ul>   
+    </div>
+
+</nav>
+<!--nav-top end-->    
+    
+    
+<div id="istyle" style="margin-bottom: 3px;"> </div> 
+    
+    
+    
+<!-- slider-->    
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" style="height:200px;">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="http://cssslider.com/sliders/demo-17/data1/images/picjumbo.com_img_5948.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="http://cssslider.com/sliders/demo-17/data1/images/picjumbo.com_img_5948.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="http://cssslider.com/sliders/demo-17/data1/images/picjumbo.com_img_5948.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    
+</div>  
+<!-- slider-->     
+    
+    
+    
+<div class="" style="background: #91acec5e;; height: 50px; text-align: center; padding: 15px;"> Content</div>
+    
+    
+<div class="card" style="padding: 15px;">
+<div class="row">
+    
+<!-- 1st layout start-->        
+<div class="col-sm-6">
+   
+
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        
+            <img src="http://cssslider.com/sliders/demo-17/data1/images/picjumbo.com_img_5948.jpg"  class="bd-placeholder-img" width="200" height="250" role="img">
+      
+        </div>
+      </div>
+    
+    
+   
+  
+    </div>
+<!-- 1st layout end-->        
+
+    
+<!-- 2nd layout start-->    
+    <div class="col-sm-3">
+        
+  <div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+        
+        
+    </div>
+  <!-- 2nd layout end-->      
+
+    
+    <!-- 3rd layout start-->    
+    <div class="col-sm-3">   
+        
+        
+<div class="card">
+  <img src="http://cssslider.com/sliders/demo-17/data1/images/picjumbo.com_img_5948.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    
+    
+    </div>    
+    <!-- 3rd layout end-->    
+
+    
+    
+
+<!-- pagenation start-->
+<nav aria-label="...">
+  <ul class="pagination" style="margin-top:10px; margin-left: 10px;">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>    
+<!-- pagenation end-->
+ 
+    
+    
+    
+
+</div></div>
+    
+    
+
+    
+    
+<div id="istyle" style="margin-bottom: 3px;"> </div>    
+    
+ <!-- Footer -->
+<footer class="page-footer bg-primary navbar-dark">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://opaar.com/"> opaar.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->   
+
+    
+    
+    
+    
+</div>
+</body></html>
