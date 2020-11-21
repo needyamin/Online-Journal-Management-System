@@ -5,8 +5,8 @@
 			'region'  => 'ap-southeast-1',
 			'version' => 'latest',
 			'credentials' => [
-				'key'    => "AKIA3FJYYGHXRKKR26NB",
-				'secret' => "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",
+				'key'    => "AKIA3F******************",
+				'secret' => "vgjyfRuGF***********************",
 			]
 		]);	
     
